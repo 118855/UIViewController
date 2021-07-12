@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     @IBAction func goToVC2(_ sender: UIButton) {
         let viewController: ViewController2 = UIStoryboard.instantiateViewController()
         
-        viewController.title = "Second UIViewController"
-        
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
