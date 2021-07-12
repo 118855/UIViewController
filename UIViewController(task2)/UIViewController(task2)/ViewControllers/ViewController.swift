@@ -56,7 +56,7 @@ extension ViewController: UITextFieldDelegate {
 }
 
 extension ViewController: SecondViewControllerDelegate {
-    func viewController(_ viewController: UIViewController, didUpdate text: String) {
+    func secondViewController(_ viewController: UIViewController, didUpdate text: String) {
         textField.text = text
     }
 }

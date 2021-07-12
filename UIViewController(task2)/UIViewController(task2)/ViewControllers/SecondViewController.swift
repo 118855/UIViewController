@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SecondViewControllerDelegate: class {
-    func viewController(_ viewController: UIViewController, didUpdate text: String)
+    func secondViewController(_ viewController: UIViewController, didUpdate text: String)
 }
 
 class SecondViewController: UIViewController {
@@ -36,7 +36,7 @@ extension SecondViewController: UITextFieldDelegate  {
         
         textField.resignFirstResponder()
         
-        deletate?.viewController(ViewController() , didUpdate: textFieldSecondVC.text ?? " ")
+        deletate?.secondViewController(self, didUpdate: textFieldSecondVC.text ?? " ")
         
         navigationController?.popViewController(animated: true)
         
