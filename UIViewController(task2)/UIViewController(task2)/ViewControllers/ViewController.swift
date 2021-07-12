@@ -36,7 +36,8 @@ class ViewController: UIViewController {
     
     private func didTapButtonToPushSecondVC ( button: UIButton) {
         
-        guard let secondViewController = main.instantiateViewController(identifier: String(describing: SecondViewController.self)) as? SecondViewController else {return}
+        guard let secondViewController = main.instantiateViewController(identifier: String(describing: SecondViewController.self))
+            as? SecondViewController else {return}
         
         secondViewController.textPuttedInTextField = textField.text
         secondViewController.backgroundColor = button.backgroundColor
@@ -54,9 +55,12 @@ extension ViewController: UITextFieldDelegate {
     }
 }
 
-extension ViewController: ViewControllerDelegate {
-    func update(textPuttedInTextField: String) {
-        textField.text = textPuttedInTextField
+extension ViewController: SecondViewControllerDelegate {
+    func viewController(_ viewController: UIViewController, didUpdate text: String) {
+        textField.text = text
     }
 }
+
+
+
 

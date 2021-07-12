@@ -7,11 +7,15 @@
 
 import UIKit
 
+protocol SecondViewControllerDelegate: class {
+    func viewController(_ viewController: UIViewController, didUpdate text: String)
+}
+
 class SecondViewController: UIViewController {
     
     @IBOutlet private weak var textFieldSecondVC: UITextField!
     
-    weak var deletate: ViewControllerDelegate?
+    weak var deletate: SecondViewControllerDelegate?
     
     var textPuttedInTextField: String?
     var backgroundColor: UIColor?
@@ -32,9 +36,11 @@ extension SecondViewController: UITextFieldDelegate  {
         
         textField.resignFirstResponder()
         
-        deletate?.update(textPuttedInTextField: textFieldSecondVC.text ?? " ")
+        deletate?.viewController(ViewController() , didUpdate: textFieldSecondVC.text ?? " ")
         
         navigationController?.popViewController(animated: true)
+        
         return true
     }
 }
+
