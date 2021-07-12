@@ -31,17 +31,5 @@ class ViewController: UIViewController {
         
         present(viewController, animated: true, completion: nil)
     }
-    
-    @IBAction func goToVC4(_ sender: UIButton) {
-        let viewController: ViewController4 = UIStoryboard.instantiateViewController()
-        
-        let navigationControllerOfVC4 = UINavigationController(rootViewController: viewController)
-
-        navigationControllerOfVC4.modalTransitionStyle = .coverVertical
-        navigationControllerOfVC4.modalPresentationStyle = .fullScreen
-
-        self.navigationController?.present(navigationControllerOfVC4, animated: true, completion: nil)
-    }
-    
 }
 

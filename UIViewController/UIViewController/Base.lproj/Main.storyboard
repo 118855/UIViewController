@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dnZ-er-50c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S4e-GB-Tec">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -26,18 +26,6 @@
                                 </state>
                                 <connections>
                                     <action selector="goToVC3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPs-Vw-1eC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EE-hi-G21">
-                                <rect key="frame" x="131" y="604" width="153" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Modal VC4">
-                                    <color key="titleColor" red="0.97960164239304282" green="0.98132258650000004" blue="0.79224038620679615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="goToVC4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNx-eC-rv2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BF3-UY-6SO">
@@ -147,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMU-Qm-E5l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="729"/>
+            <point key="canvasLocation" x="916" y="753"/>
         </scene>
         <!--View Controller4-->
         <scene sceneID="Nq1-le-mn3">
@@ -157,18 +145,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYr-Kt-niD">
-                                <rect key="frame" x="123" y="708" width="168" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Close">
-                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="goToRootVC:" destination="9DK-Ra-QFb" eventType="touchUpInside" id="PwD-3n-Gvl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rS-ih-OeZ">
                                 <rect key="frame" x="157" y="386" width="114" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -189,12 +165,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkP-er-xIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-104" y="729"/>
+            <point key="canvasLocation" x="-104" y="753"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="58W-Ii-Qgc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dnZ-er-50c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7N2-yx-wM6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DOf-Ue-2EG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -209,10 +186,29 @@
             </objects>
             <point key="canvasLocation" x="-1014.4927536231885" y="24.776785714285712"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="oWs-r2-fU0">
+            <objects>
+                <tabBarController id="S4e-GB-Tec" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jiO-Li-8x8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dnZ-er-50c" kind="relationship" relationship="viewControllers" id="OsB-PY-MAO"/>
+                        <segue destination="WDK-Uy-eM1" kind="relationship" relationship="viewControllers" id="4ui-LR-ggc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iz7-av-Mbs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2061" y="25"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="KSk-8J-fpX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WDK-Uy-eM1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Fb2-Qs-Iv0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BmC-bq-doc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -225,7 +221,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAX-OI-pWW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1014" y="729"/>
+            <point key="canvasLocation" x="-1014" y="753"/>
         </scene>
     </scenes>
     <resources>
